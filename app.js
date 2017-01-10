@@ -21,7 +21,7 @@ function listening() {
 }
 
 
-
+app.use(express.static('website'));
 app.get('/add/:word/:score?', addWord);
 
 function addWord(request, response) {
